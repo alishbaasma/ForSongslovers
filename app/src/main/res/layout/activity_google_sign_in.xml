@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".googleSignIn">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:background="#6D98E2"
+        android:minHeight="?attr/actionBarSize">
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:paddingLeft="16dp"
+        android:paddingBottom="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:text="SoundCloud would like to:"
+        android:layout_marginTop="100dp"/>
+
+    <TextView
+        android:layout_width="33dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="169dp"
+        android:layout_marginLeft="16dp"
+        android:text="G"
+        android:textSize="30dp"
+        android:textStyle="bold"/>
+
+    <TextView android:paddingLeft="16dp"
+        android:paddingBottom="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="40dp"
+        android:text="View your basic profile info"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:paddingLeft="16dp"
+        android:paddingBottom="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:text="\n\nBy continuing,you allow this this app and Google to use your information in accordance with their respective terms of service and privacy policies."
+        android:textSize="17dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DENY"
+        android:textStyle="normal"
+        android:textSize="18dp"
+        android:textColor="#000FFF"
+        android:background="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="150dp"
+        android:id="@+id/denybtn"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ALLOW"
+        android:textStyle="normal"
+        android:textSize="18dp"
+        android:textColor="#000FFF"
+        android:background="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="60dp"
+        android:id="@+id/allowbtn" />
+
+</RelativeLayout>
+

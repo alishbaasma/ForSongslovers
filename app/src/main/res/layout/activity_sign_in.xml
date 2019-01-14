@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp"
+    tools:context=".SignIn">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="Sign In"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="90dp"
+        android:textColor="#FFFFFF"
+        android:scaleType="fitXY"
+        android:src="@drawable/googlepic"
+        android:id="@+id/googlebtn"
+        android:textSize="20dp"
+        android:background="#6D98E2"/>
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="180dp"
+        android:textColor="#FFFFFF"
+        android:src="@drawable/fb"
+        android:scaleType="fitXY"
+        android:id="@+id/facebookbtn"
+        android:textSize="20dp"
+        android:background="#0000FF"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/text_input_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:errorEnabled="true"
+        android:layout_marginTop="300dp">
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/text_input_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:errorEnabled="true"
+        android:layout_marginTop="360dp"
+        app:passwordToggleEnabled="true">
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:layout_marginTop="360dp"
+        android:inputType="textPassword"/>
+
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="60dp"
+          android:text="Continue"
+          android:layout_marginTop="440dp"
+          android:onClick="confirmInput"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forget your password?"
+        android:textColor="#000FFF"
+        android:layout_marginTop="500dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="15dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Home"
+        android:textSize="28dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="More of what you like"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:textSize="22dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Suggestions based on what you've liked or played"
+        android:textSize="16dp"/>
+
+    <View
+        android:layout_width="380dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="40dp"
+        android:background="#a40404" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="130dp"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottomnavigationview">
+    </FrameLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:id="@+id/bottomnavigationview"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/menu_nav"
+        android:background="#000000"
+        app:itemIconTint="#FFFFFF"
+        app:itemTextColor="#000000"
+        app:itemIconSize="30dp"
+
+        >
+    </android.support.design.widget.BottomNavigationView>
+
+</RelativeLayout>
